@@ -2,7 +2,7 @@
 
 This is an expansion on Gilles Dufour's Node.js EmberPlus implementation (https://github.com/dufourgilles/node-emberplus). 
 
-This is a coletion fo nodejs script I've used to control or work with diferent Emberplus equipment in a brodcast setting. Maybe they will be helpful to you too.
+This is a colletion fo nodejs script I've used to control or work with different Emberplus equipment in a brodcast setting. Maybe they will be helpful to you too.
 
 EmberPlus view is a helpful tool to get element paths from emberplus equipment. -> (https://github.com/Lawo/ember-plus/releases)
 
