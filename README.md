@@ -235,7 +235,7 @@ Commandline argument for Connecting to a VPro8 and getting the vdeo martix cross
 node vpro_matrix.js -h YOUR-VPRO-IP-ADDRESS -p 9000
 ```
 
-Martix Disconnection (VPRO_matrixDiscover.js)
+Martix Discovery (VPRO_matrixDiscover.js)
 
 ```javascript
 const { EmberClient, EmberClientEvent } = require('node-emberplus');
