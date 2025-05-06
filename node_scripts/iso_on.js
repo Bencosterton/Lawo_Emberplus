@@ -12,7 +12,7 @@ async function runClient() {
 	
 	try {
 		await client.connectAsync();
-		console.log('connected to Lawo MC2 console at ${host}:${port}');
+		console.log('connected to Lawo at ${host}:${port}');
 		
 		let isoOff = await client.getElementByPathAsync("2.3.16950.16951.23538.23539.24168.24170.24178");  // element of the channel ISO
 		console.log('ISO Off:', isoOff);
@@ -24,7 +24,7 @@ async function runClient() {
 		
 	} finally {
 		await client.disconnectAsync();
-		console.log('Disconnected from LAwo Mc2 console');
+		console.log('Disconnected from Lawo');
 	}
 }
 
