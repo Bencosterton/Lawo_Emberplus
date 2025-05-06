@@ -2,7 +2,7 @@ const { EmberClient, EmberClientEvent, Emberlib, LoggingService } =
 require('node-emberplus');
 
 async function runClient() {
-	const host = '192.168.1.21'; // Lawo IP
+	const host = '10.10.124.4'; // Lawo IP
 	const port = 9000;
 	const client = new EmberClient({ host, port, logger: new LoggingService(5) });
 	
@@ -12,9 +12,9 @@ async function runClient() {
 	
 	try {
 		await client.connectAsync();
-		console.log('connected to Lawo at ${host}:${port}');
+		console.log('connected to Lawo MC2 console at ${host}:${port}');
 		
-		let isoOff = await client.getElementByPathAsync("2.3.16950.16951.23538.23539.24168.24170.24178 // element of the channel ISO
+		let isoOff = await client.getElementByPathAsync("2.3.16950.16951.23538.23539.24168.24170.24178");  // element of the channel ISO
 		console.log('ISO Off:', isoOff);
 		
 		if (isoOff && isoOff.contents && isoOff.contents.value !== undefined) { 
@@ -24,7 +24,7 @@ async function runClient() {
 		
 	} finally {
 		await client.disconnectAsync();
-		console.log('Disconnected from Lawo');
+		console.log('Disconnected from LAwo Mc2 console');
 	}
 }
 
