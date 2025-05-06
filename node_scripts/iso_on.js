@@ -18,7 +18,7 @@ async function runClient() {
 		console.log('ISO Off:', isoOff);
 		
 		if (isoOff && isoOff.contents && isoOff.contents.value !== undefined) { 
-			await client.setValueAsync(isoOff, true);
+			await client.setValueAsync(isoOff, true); // Change value to false here to turn it off
 			console.log('Iso value set to false');
 		}
 		
