@@ -2,7 +2,7 @@ const { EmberClient, EmberClientEvent, Emberlib, LoggingService } =
 require('node-emberplus');
 
 async function runClient() {
-	const host = '10.10.124.4'; // Lawo IP
+	const host = '192.168.1.100'; // Lawo IP
 	const port = 9000;
 	const client = new EmberClient({ host, port, logger: new LoggingService(5) });
 	
